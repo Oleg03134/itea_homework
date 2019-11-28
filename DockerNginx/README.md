@@ -1,4 +1,4 @@
 # itea_homework
 #docker homework
-docker build -t oleg03134/gitclone .
-docker run --rm -e GIT_URL=https://github.com/Dgadavin/devops-course-itea.git -v D:\docker\test:/app/ oleg03134/gitclone
+docker build -t oleg03134/test-nginx .
+docker run -d -p 3000:80 -e VALUE=TEST oleg03134/test-nginx
